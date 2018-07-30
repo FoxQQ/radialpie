@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radial Pie</title>
+    <style ref="./radialpie.css" type="text/css"></style>
+</head>
+<body>
+
+<div id="chart"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="BasicChart.js"></script>
+<script src="RadialPie.js"></script>
+<script>
+    var x =d3.json('./data.json');
+    var y = x.then((d)=>{
+        let chart = new RadialPie(d);
+    });
+
+</script>
+</body>
+</html>
